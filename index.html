@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بستان | متجر النباتات والمنتجات الزراعية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== الترويسة وشريط التنقل ===== -->
+<header class="site-header">
+  <div class="nav-wrap">
+    <div class="logo">
+      <svg viewBox="0 0 24 24" fill="none">
+        <path d="M12 21c0-8 4-14 9-16 0 9-4 15-9 16Z" fill="#5C9A6A"/>
+        <path d="M12 21c0-8-4-14-9-16 0 9 4 15 9 16Z" fill="#1F4D2C"/>
+      </svg>
+      بستان
+    </div>
+    <button class="menu-toggle" id="menu-toggle" aria-label="فتح القائمة">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html" class="active">الرئيسية</a>
+      <a href="products.html">المنتجات</a>
+      <a href="about.html">من نحن</a>
+      <a href="login.html">تسجيل الدخول</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="cart-pill">🧺 <span id="cart-count">0</span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- ===== قسم Hero ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-copy">
+        <span class="eyebrow">بستان · نباتات ومنتجات زراعية</span>
+        <h1>من الأرض إلى منزلك</h1>
+        <p>نباتات منتقاة بعناية، وبذور وأسمدة وأدوات زراعية أصلية، مع نصائح من مزارعين حقيقيين لنجعل كل ركن أخضر في متناول يدك.</p>
+        <div class="hero-actions">
+          <a href="products.html" class="btn btn-primary">تسوّق الآن</a>
+          <a href="about.html" class="btn btn-outline">تعرّف علينا</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <svg viewBox="0 0 300 300">
+          <ellipse cx="150" cy="255" rx="65" ry="16" fill="#1F4D2C" opacity=".85"/>
+          <path d="M105 210 L122 255 L178 255 L195 210 Z" fill="#1F4D2C" opacity=".85"/>
+          <path d="M150 210 C 140 165, 140 140, 150 105 C 155 80, 148 62, 150 40" fill="none" stroke="#DCEBDF" stroke-width="5" stroke-linecap="round"/>
+          <path d="M150 130 C 112 122, 90 96, 95 65 C 138 74, 156 100, 150 130Z" fill="#5C9A6A"/>
+          <path d="M150 130 C 188 122, 210 96, 205 65 C 162 74, 144 100, 150 130Z" fill="#DCEBDF"/>
+          <path d="M150 78 C 122 70, 106 48, 111 24 C 145 33, 158 56, 150 78Z" fill="#3F7D4E"/>
+          <path d="M150 78 C 178 70, 194 48, 189 24 C 155 33, 142 56, 150 78Z" fill="#5C9A6A"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== الفئات ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">تسوّق حسب الفئة</span>
+        <h2>كل ما يحتاجه بستانك</h2>
+        <p>من نبتة صغيرة على مكتبك إلى مزرعة كاملة، اخترنا الفئات الأربع الأكثر طلبًا.</p>
+      </div>
+      <div class="cat-grid">
+        <a href="products.html" class="cat-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 3v18M6 9c0 4 3 6 6 6s6-2 6-6c-3 0-6 1-6 3-0-2-3-3-6-3Z"/></svg>
+          <h3>نباتات داخلية</h3>
+        </a>
+        <a href="products.html" class="cat-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 22V10M12 10c-4 0-7-3-7-7 4 0 7 3 7 7Zm0 0c4 0 7-3 7-7-4 0-7 3-7 7Z"/></svg>
+          <h3>نباتات خارجية</h3>
+        </a>
+        <a href="products.html" class="cat-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"/></svg>
+          <h3>بذور</h3>
+        </a>
+        <a href="products.html" class="cat-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></svg>
+          <h3>أسمدة ومستلزمات</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== أبرز المميزات ===== -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">لماذا بستان</span>
+        <h2>نزرع الثقة قبل النبتة</h2>
+        <p>ثلاث مزايا تجعل تجربة الشراء أسهل وأكثر أمانًا.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M20 6 9 17l-5-5"/></svg>
+          </div>
+          <h3>جودة مضمونة</h3>
+          <p>كل نبتة تُفحص قبل الشحن، وتصل معها بطاقة عناية مبسّطة لضمان استمرارها.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M12 3v18"/></svg>
+          </div>
+          <h3>توصيل آمن</h3>
+          <p>تغليف مخصص يحافظ على النبتة والتربة سليمة طوال رحلة التوصيل إليك.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3>دعم زراعي</h3>
+          <p>فريقنا يجيبك عن أي سؤال حول الري والإضاءة ومواعيد الزراعة المناسبة.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== منتجات مختارة ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">الأكثر طلبًا</span>
+        <h2>منتجات مختارة لهذا الأسبوع</h2>
+      </div>
+      <div class="product-grid" id="home-products"></div>
+      <div style="text-align:center; margin-top:40px;">
+        <a href="products.html" class="btn btn-primary">عرض كل المنتجات</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== التذييل ===== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="logo" style="color:#fff; font-size:1.4rem;">بستان</div>
+      <p>متجرك الموثوق للنباتات والمنتجات الزراعية، من الأرض إلى منزلك.</p>
+    </div>
+    <div>
+      <h4>الصفحات</h4>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="products.html">المنتجات</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="login.html">تسجيل الدخول</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>الفئات</h4>
+      <ul>
+        <li>نباتات داخلية</li>
+        <li>نباتات خارجية</li>
+        <li>بذور</li>
+        <li>أسمدة ومستلزمات</li>
+      </ul>
+    </div>
+    <div>
+      <h4>تواصل معنا</h4>
+      <ul>
+        <li>info@bustan-store.com</li>
+        <li>٠٠٠ ١٢٣ ٤٥٦ (٩٦٦+)</li>
+      </ul>
+    </div>
+  </div>
+  <p class="footer-bottom">© 2026 بستان — جميع الحقوق محفوظة</p>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+  renderFeaturedProducts("home-products", 4);
+</script>
+</body>
+</html>
